@@ -23,7 +23,7 @@
 docker-compose up --force-recreate
 ```
 
-### Manage Targets
+## Manage Targets
 
  - Create target groups in the "prometheus.yml" file under "scrape_configs":
  
@@ -62,7 +62,7 @@ scrape_configs:
     name: 'Server 3'
 ```
 
-### Manage Rules
+## Manage Rules
 
  - Add the rule file to the "prometheus.yml" file under "rule_files":
  
@@ -97,7 +97,7 @@ groups:
         description: "Server {{ $labels.instance }} has been using more than 85% of his memory RAM in the last 5 minutes"    
 ```
 
-### Exporters:
+## Exporters:
 
  - node_exporter (linux)
    - https://github.com/prometheus/node_exporter/releases
