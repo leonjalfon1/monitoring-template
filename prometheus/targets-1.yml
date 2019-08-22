@@ -1,0 +1,15 @@
+- targets: ['10.0.75.1:9182']
+  labels:
+    name: 'Server 1'
+
+- targets: ['172.17.62.193:9182']
+  labels:
+    name: 'Server 2'
+
+- targets: ['192.168.1.9:9182']
+  labels:
+    name: 'Server 3'
+
+- targets: ['10.0.32.52:9091']
+  labels:
+    name: 'Server 4'

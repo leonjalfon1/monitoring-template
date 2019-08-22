@@ -1,0 +1,32 @@
+# Global Config
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s 
+  scrape_timeout: 10s
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+  - scheme: http
+    static_configs:
+    - targets: ['alertmanager:9093']
+
+rule_files:
+  - 'alerts.yml'
+
+scrape_configs:
+
+  - job_name: 'prometheus'
+    static_configs:
+    - targets: ['localhost:9090']
+
+  - job_name: 'Targets 1'
+    file_sd_configs:
+      - files:
+         - targets-1.yml
+
+  - job_name: 'Targets 2'
+    metrics_path: '/metrics'
+    file_sd_configs:
+      - files:
+         - targets-2.yml
