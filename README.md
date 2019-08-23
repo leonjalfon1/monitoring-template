@@ -1,6 +1,11 @@
 # Monitoring with Prometheus, Alertmanager and Grafana
 ---
 
+## Description
+
+ - This monitoring solution will deploy prometheus, alertmanager and grafana by using docker-compose.
+ - All the data is stored in docker volumes for data persistence
+ 
 ## Installation
 
  - To install the monitoring solution run the command below in the repository root folder:
