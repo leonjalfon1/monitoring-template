@@ -1,4 +1,4 @@
-# Monitoring
+# Monitoring with Prometheus, Alertmanager and Grafana
 ---
 
 ## Installation
