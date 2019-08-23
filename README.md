@@ -64,14 +64,14 @@ scrape_configs:
 
 ## Manage Rules
 
- - Add the rule file to the "prometheus.yml" file under "rule_files":
+ - Add the alerts file to the "prometheus.yml" file under "rule_files":
  
 ```
 rule_files:
   - 'alerts.yml'
 ```
 
- - Add the rules specification to the rule file 
+ - Add the alerts specification to the "alerts.yaml" file:
  
 ```
 groups:
