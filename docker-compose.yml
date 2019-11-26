@@ -21,7 +21,7 @@ services:
     restart: always
     mem_limit: 4G
     ports:
-     - "3000:3000"
+     - "80:3000"
     volumes:
      - "grafana_data:/var/lib/grafana"
     networks:
@@ -45,9 +45,22 @@ services:
      - "alertmanager_data:/alertmanager"
     networks:
      - "monitoring"
+  portainer:
+    image: "portainer/portainer"
+    container_name: portainer
+    restart: always
+    ports:
+     - "8000:8000"
+     - "9000:9000"
+    volumes:
+     - "/var/run/docker.sock:/var/run/docker.sock"
+     - "portainer_data:/data"
+    networks:
+     - "monitoring"
 volumes:
   prometheus_data:
   grafana_data:
   alertmanager_data:
+  portainer_data:
 networks:
   monitoring:
