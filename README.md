@@ -20,7 +20,7 @@
  - Prometheus: http://localhost:9090
  - Alertmanager: http://localhost:9093
  - Grafana: http://localhost:80
- - Portainer: http//localhost:900
+ - Portainer: http://localhost:9000
 
 ## Configuration
 
