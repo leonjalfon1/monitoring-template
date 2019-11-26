@@ -5,6 +5,7 @@
 
  - This monitoring solution will deploy prometheus, alertmanager and grafana by using docker-compose.
  - All the data is stored in docker volumes for data persistence
+ - In addition Portainer is deployed to manage the monitoring infrastructure
  
 ## Installation
 
@@ -18,7 +19,8 @@
  
  - Prometheus: http://localhost:9090
  - Alertmanager: http://localhost:9093
- - Grafana: http://localhost:3000
+ - Grafana: http://localhost:80
+ - Portainer: http//localhost:900
 
 ## Configuration
 
